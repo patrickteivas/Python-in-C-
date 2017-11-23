@@ -10,6 +10,18 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Sisestage 2 arvu");
+            int FirstInput = int.Parse(Console.ReadLine());
+            int SecondInput = int.Parse(Console.ReadLine());
+
+            while (FirstInput < SecondInput)
+            {
+                if (FirstInput % 2 == 0)
+                {
+                    Console.WriteLine(FirstInput);
+                }
+                FirstInput++;
+            }
         }
     }
 }
