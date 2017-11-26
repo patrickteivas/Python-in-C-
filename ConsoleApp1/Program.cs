@@ -32,29 +32,10 @@ namespace ConsoleApp1
             //Ülesanne 2
 
             string filepath = Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.FullName, "kttekst.txt"); ;
-            Console.WriteLine(filepath);
 
-            
-
-            StreamReader streamReader = new StreamReader(filepath); //get the file
-            string stringWithMultipleSpaces = streamReader.ReadToEnd(); //load file to string
-            streamReader.Close();
-
-            Regex r = new Regex(" +"); //specify delimiter (spaces)
-            string[] words = r.Split(stringWithMultipleSpaces); //(convert string to array of words)
-
-
-
-            foreach (String W in words)
-            {
-                List<int> PalunTapkeMind = new List<int>();
-                PalunTapkeMind.Add(1);
-                
-                //...
-                
-                Console.WriteLine(PalunTapkeMind);
-            }
-
+            string failText = File.ReadAllText(filepath); //Text from file to string
+            string[] words = failText.Split(' '); //Words to word array
+    
 
 
         }
