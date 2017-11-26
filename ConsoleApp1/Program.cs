@@ -15,20 +15,28 @@ namespace ConsoleApp1
         {
             //Ülesanne 1
 
-            //Console.WriteLine("Sisestage 2 arvu");
-            //int FirstInput = int.Parse(Console.ReadLine());
-            //int SecondInput = int.Parse(Console.ReadLine());
+            Console.WriteLine("Sisestage 2 arvu");
+            int FirstInput = int.Parse(Console.ReadLine());
+            int SecondInput = int.Parse(Console.ReadLine());
 
-            //while (FirstInput < SecondInput)
-            //{
-            //    if (FirstInput % 2 == 0)
-            //    {
-            //        Console.WriteLine(FirstInput);
-            //    }
-            //    FirstInput++;
-            //}
+            if(FirstInput > SecondInput)
+            {
+                int temp = SecondInput;
+                SecondInput = FirstInput;
+                FirstInput = temp;
+            }
 
+            Console.WriteLine("Nende kahe arvu vahele jäävad paarisarvud:");
+            while (FirstInput < SecondInput)
+            {
+                if (FirstInput % 2 == 0)
+                {
+                    Console.WriteLine(FirstInput);
+                }
+                FirstInput++;
+            }
 
+            Console.WriteLine();
             //Ülesanne 2
 
             string filepath = Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.FullName, "kttekst.txt"); ;
