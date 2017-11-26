@@ -35,13 +35,17 @@ namespace ConsoleApp1
 
             string failText = File.ReadAllText(filepath); //Text from file to string
             string[] words = failText.Split(' '); //Words to word array
-            Console.WriteLine(words.Length);
+            Console.WriteLine("Sõnu failis: " + words.Length);
 
-            for (int i = 0; i <= words.Length; i++)
+            int i = 0;
+            foreach (var word in words)
             {
-                Console.WriteLine("");
+                if (word.Length < 5)
+                {
+                    i++;
+                }
             }
-
+            Console.WriteLine("Väiksemad kui 5 tähte sõnu failis: " + i);
 
         }
     }
