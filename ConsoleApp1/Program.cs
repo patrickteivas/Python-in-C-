@@ -35,9 +35,15 @@ namespace ConsoleApp1
 
             string failText = File.ReadAllText(filepath); //Text from file to string
             string[] words = failText.Split(' '); //Words to word array
-    
+            Console.WriteLine(words.Length);
+
+            for (int i = 0; i <= words.Length; i++)
+            {
+                Console.WriteLine("");
+            }
 
 
         }
     }
 }
+
