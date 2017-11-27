@@ -22,6 +22,7 @@ namespace ConsoleApp1
                 }
                 FirstInput++;
             }
+            Console.ReadKey();
         }
     }
 }
