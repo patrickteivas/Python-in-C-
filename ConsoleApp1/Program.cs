@@ -15,6 +15,8 @@ namespace ConsoleApp1
         {
             //Ülesanne 1
 
+            Console.WriteLine("\nEsimene Ülesanne \n");
+
             Console.WriteLine("Sisestage 2 arvu");
             int FirstInput = int.Parse(Console.ReadLine());
             int SecondInput = int.Parse(Console.ReadLine());
@@ -36,13 +38,19 @@ namespace ConsoleApp1
                 FirstInput++;
             }
 
-            Console.WriteLine();
+            Console.WriteLine("\nPress any key to continue!");
+            Console.ReadKey();
+
             //Ülesanne 2
+
+            Console.WriteLine("\n\nTeine Ülesanne \n");
 
             string filepath = Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.FullName, "kttekst.txt"); ;
 
             string failText = File.ReadAllText(filepath); //Text from file to string
             string[] words = failText.Split(' '); //Words to word array
+
+            Console.WriteLine("#1");
             Console.WriteLine("Sõnu failis: " + words.Length);
 
             int i = 0;
@@ -53,11 +61,16 @@ namespace ConsoleApp1
                     i++;
                 }
             }
+
+            Console.WriteLine("#2");
             Console.WriteLine("Väiksemad kui 5 tähte sõnu failis: " + i);
+
+            Console.WriteLine("\nPress any key to continue!");
+            Console.ReadKey();
 
             //Ülesanne 3
 
-            Console.WriteLine("\nKolmas ülesanne \n ");
+            Console.WriteLine("\n\nKolmas Ülesanne \n ");
 
             List<float> esimeneList = new List<float>() { 11, 15, 6, 13, 13, 25, 32, 11, 20, 5, 31, 16, 32, 29, 11, 13, 3, 29, 28, 24 };
             List<float> teineList = new List<float>() { 5, 19, 16, 4, 12, 7, 2, 28, 34, 29, 29, 36, 6, 8, 24, 18, 31, 7, 1, 70 };
