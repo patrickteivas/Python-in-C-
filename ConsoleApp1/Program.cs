@@ -95,6 +95,8 @@ namespace ConsoleApp1
 
             // Kolmas
             Console.WriteLine("Mõlema listi keskmine on: " + (kolmasList.Sum() / kolmasList.Count()));
+
+            Console.ReadKey();
         }
     }
 }
