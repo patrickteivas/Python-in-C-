@@ -1,11 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
-using System.IO.MemoryMappedFiles;
 using System.Linq;
-using System.Text;
-using System.Text.RegularExpressions;
-using System.Threading.Tasks;
 
 namespace ConsoleApp1
 {
@@ -96,6 +92,7 @@ namespace ConsoleApp1
             // Kolmas
             Console.WriteLine("Mõlema listi keskmine on: " + (kolmasList.Sum() / kolmasList.Count()));
 
+            Console.WriteLine("\nPress any key to continue!");
             Console.ReadKey();
         }
     }
