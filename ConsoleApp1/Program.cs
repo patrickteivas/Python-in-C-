@@ -95,26 +95,20 @@ namespace ConsoleApp1
             Console.WriteLine("Kahe listi väikseim on: " + kolmasMin);
 
             // Esimene
-            float esimeneListArv = esimeneList.Count();
-            float esimeneListSum = esimeneList.Sum();
-            float esimeneListKeskmine = esimeneListSum / esimeneListArv;
+            float esimeneListKeskmine = esimeneList.Sum() / esimeneList.Count();
 
 
             Console.Write("#4.1 \n");
             Console.WriteLine("Esimese listi keskmine on: " + esimeneListKeskmine);
 
             // Teine
-            float teineListArv = teineList.Count();
-            float teineListSum = teineList.Sum();
-            float teineListKeskmine = teineListSum / teineListArv;
+            float teineListKeskmine = teineList.Sum() / teineList.Count();
 
             Console.Write("#4.2 \n");
             Console.WriteLine("Teise listi keskmine on: " + teineListKeskmine);
 
             // Kolmas
-            float kolmasListArv = kolmasList.Count();
-            float kolmasListSum = kolmasList.Sum();
-            float kolmasListKeskmine = kolmasListSum / kolmasListArv;
+            float kolmasListKeskmine = kolmasList.Sum() / kolmasList.Count();
 
             Console.WriteLine("#5");
             Console.WriteLine("Mõlema listi keskmine on: " + kolmasListKeskmine);
